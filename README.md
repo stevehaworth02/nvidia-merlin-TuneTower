@@ -21,27 +21,23 @@ The project is built on the **Million Song Dataset** and designed to demonstrate
 
 ```mermaid
 flowchart TD
-    subgraph Data Pipeline
-        A[Million Song Dataset] --> B[Apache Spark: ALS + Metadata]
-        B --> C[NVTabular Preprocessing]
-    end
+    %% Data pipeline
+    A[Million Song Dataset] --> B[Apache Spark: ALS + Metadata]
+    B --> C[NVTabular Preprocessing]
 
-    subgraph Modeling
-        C --> D[Two-Tower Model (Merlin)]
-        D --> E[FAISS/ScaNN Index]
-        D --> F[Reranker (LightGBM/DIN)]
-    end
+    %% Modeling
+    C --> D[Two-Tower Model (Merlin)]
+    D --> E[FAISS / ScaNN Index]
+    D --> F[Reranker (LightGBM / DIN)]
 
-    subgraph Serving
-        E --> G[Triton Inference Server]
-        F --> G
-        G --> H[FastAPI Wrapper]
-    end
+    %% Serving
+    E --> G[Triton Inference Server]
+    F --> G
+    G --> H[FastAPI Wrapper]
 
-    subgraph MLOps
-        D --> I[MLflow Registry]
-        C --> J[CI/CD - GitHub Actions]
-    end
+    %% MLOps
+    D --> I[MLflow Registry]
+    C --> J[CI/CD - GitHub Actions]
 ```
 
 ---

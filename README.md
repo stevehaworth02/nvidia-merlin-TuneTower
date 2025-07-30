@@ -1,3 +1,5 @@
+(Model, data, information coming soon -- containerizing for reproducibility, working on CI/CD workflow, LFS, and HuggingFace
+
 ## 1. Problem Definition
 
 This project uses NVIDIA Merlin to build a scalable, GPU-accelerated recommender system based on **implicit feedback** (user play counts) from the [Million Song Dataset](https://labrosa.ee.columbia.edu/millionsong/).

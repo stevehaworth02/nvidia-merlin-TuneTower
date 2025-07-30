@@ -1,4 +1,4 @@
-(Model, data, information coming soon -- containerizing for reproducibility, working on CI/CD workflow, LFS, and HuggingFace
+(Model, data, information coming soon -- containerizing for reproducibility, working on CI/CD workflow, LFS, and HuggingFace)
 
 ## 1. Problem Definition
 
